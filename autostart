@@ -42,7 +42,7 @@ volumeicon &
 (sleep 2s && xfce4-power-manager) &
 
 ## Start PcManfm Daemon
-(sleep 5s && pcmanfm) &
+#(sleep 5s && pcmanfm) &
 
 ## Detect and configure touchpad. See 'man synclient' for more info.
 if egrep -iq 'touchpad' /proc/bus/input/devices; then
@@ -78,10 +78,10 @@ xset b off &
 ~/bin/conky_start &
 
 ## Run sakura-- 2 terminals
-sakura --title=Terminal_1 &
-sakura --title=Terminal_2 &
+#sakura --title=Terminal_1 &
+#sakura --title=Terminal_2 &
 
-(sleep 2s && iceweasel) &
+#(sleep 2s && iceweasel) &
 
-(sleep 2s && devilspie2) &
+#(sleep 2s && devilspie2) &
 
